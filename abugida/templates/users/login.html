@@ -1,0 +1,74 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block content %}
+
+
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+
+
+    </ul>
+
+    {% endif %}
+
+      
+
+ <section
+            class="container-fluid vh-100 vw-50 py-5 bg-light "
+        >
+        
+            <div class="container my-5">
+                
+                <div class="log no-gutters row my-5 mx-auto justify-content-center" style="height: 600px; width: 60%">
+                    <div class="col-md-8 col-sm-12 justify-content-center">
+                        <form class="vh-90 " method="POST" action="">
+                            {% csrf_token %}
+                            <div class="row col-lg-10 mx-auto">
+                                <div class="pt-2 "><img style="width: 100%;" src="{% static 'images/image-removebg-preview.png' %}" alt=""></div>
+            
+                            </div>
+                            
+                            <div class="form-row d-lg-flex justify-content-between">
+                                
+                                <div class="col-10">
+                                    <input
+                                        type="text"
+                                        placeholder="Enter username"
+                                        name= "username"
+                                        class="form-control my-2 py-3"
+                                    />
+                                </div>
+                            </div>
+                            
+                                
+                            <div class="col-10 me-3">
+                                    <input
+                                        type="password"
+                                        name="password"
+                                        placeholder="Password"
+                                        class="form-control mt-3 py-3"
+                                    />
+                            
+                            <div class="form-row my-5">
+                                <div class="col-7 mx-auto">
+                                    <button type="submit" value="Login" class="login-btn">
+                                        login
+                                    </button>
+                                </div>
+                            </div>
+                            
+                            <a href="#">forget password?</a>
+                            <p class="pb-3">
+                                Don't have an account?
+                                <a href="#">register here </a>
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+{% endblock %}
