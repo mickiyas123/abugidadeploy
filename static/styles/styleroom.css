@@ -1,0 +1,217 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 56.25%;
+}
+body {
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: 1.5rem;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+}
+
+.more-btn {
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  background-color: #005959;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.profile img {
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.profile--small img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.room-box {
+  background-color: white;
+  border-radius: 35px;
+  box-shadow: 12px 12px 22px grey;
+  min-height: 100vh;
+}
+
+.room-lists {
+  background-color: #ebebeb;
+  border-radius: 35px;
+  box-shadow: 12px 12px 0px grey;
+}
+.btn {
+  background-color: #005959;
+  width: 80%;
+  height: 50px;
+  font-size: 15px;
+  border-radius: 7px;
+}
+.cancel {
+  width: 100px;
+  height: 50px;
+  font-size: 15px;
+  border-radius: 7px;
+}
+.question {
+  width: 120px;
+  height: 50px;
+  font-size: 15px;
+  border-radius: 7px;
+}
+
+.topics-head h2 {
+  font-size: 35px;
+}
+.topics-head .search {
+  background-color: #ebebeb;
+  width: 100%;
+}
+
+.header a {
+  color: white;
+}
+/* profile  */
+.profile-medium img {
+  width: 30rem;
+  height: 30rem;
+}
+
+.profile {
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.desc .btn {
+  border: none;
+  outline: none;
+  height: 50px;
+  width: 20%;
+  background-color: #005959;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.desc .btn:hover {
+  background: white;
+  border: 1px solid;
+  color: black;
+}
+
+.room {
+  background-color: #ebebeb;
+  border-radius: 35px;
+  box-shadow: 12px 12px 0px grey;
+  min-height: 100vh;
+}
+
+#qtitle,
+.fw {
+  width: 100%;
+}
+#qdisc,
+#bio {
+  width: 100%;
+  height: 200px;
+}
+
+.creatq,
+.editp {
+  font-weight: bold;
+  font-size: 200%;
+}
+
+.profilep {
+  width: 100%;
+  border: 1px solid black;
+}
+
+.dropdown li a {
+  font-size: 15px;
+}
+
+.btn-conf {
+  width: 20%;
+}
+
+.delete-box {
+  /* margin-top: ; */
+  min-height: 50vh;
+
+  /* align-items: center; */
+}
+.del-box {
+  background-color: #ebebeb;
+}
+
+/* course dashbord  */
+.dashbord {
+  min-height: 100vh;
+}
+
+.dashbord li {
+  list-style: none;
+}
+
+.dashbord li a {
+  text-decoration: none;
+  font-size: large;
+  line-height: 100px;
+}
+
+/* modify header if loged in  */
+.nav-section li a {
+  color: white;
+  
+}
+.nav-section{
+  top: 0;
+}
+.roomsec{
+  margin-top: 10% !important;
+}
+/* section{
+  margin-top: 1000px;
+} */
+/* .roomsec{
+  margin-top: 1000px;
+} */
+
+.roomqes a{
+  text-decoration: none;
+}
+.roomqes a:hover{
+  color: #005959;
+}
+.accountedit{
+  margin-top: 10%!important;
+
+}
+

@@ -1,0 +1,67 @@
+{% load static %}
+
+{% include 'nav_bar.html' %}
+
+
+        <section
+            class="container-fluid vh-100 vw-50 py-5 bg-light "
+        >
+        
+            <div class="container my-5">
+                
+                <div class="log no-gutters row my-5 mx-auto justify-content-center" style="height: 600px; width: 60%">
+                    <div class="col-md-8 col-sm-12 justify-content-center">
+                        <form class="vh-90 " method="POST" action="">
+                            {% csrf_token %}
+                            <div class="row col-lg-10 mx-auto">
+                                <div class="pt-2 "><img style="width: 100%;" src="{% static 'images/image-removebg-preview.png' %}" alt=""></div>
+            
+                            </div>
+                            {% for field in form %}
+
+                            <label><h4>{{field.label}}</h4></label>
+                            
+
+                            {{field}} 
+
+
+                {% for error in field.errors %}
+              <div class="alert alert-danger d-flex align-items-center" role="alert">
+                <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+                  <use xlink:href="#exclamation-triangle-fill" />
+                </svg>
+                <div>
+                  {{ error }}
+                </div>
+
+
+                </div>
+              {% endfor %}
+                            {% endfor %}
+
+                            
+                           
+                            
+                            <div class="form-row my-5">
+                                <div class="col-7 mx-auto">
+                                    <button type="submit" value="Login" class="login-btn">
+                                        signup
+                                    </button>
+                                </div>
+                                <p class="col-lg-7 pb-3 mx-auto ">
+                                Already have an account?
+                                <a href="{% url 'login' %}">login here</a>
+                            </p>
+                            </div>
+                            
+                           
+                        </form>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+        
+
+    </body>
+</html>
